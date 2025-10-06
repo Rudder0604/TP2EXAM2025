@@ -1,0 +1,187 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Crime Stats of South Africa 2011-2023 | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="Crime statistics as released by the South African Police Services." />
+    <meta name="keywords" content="crime,statistical analysis,africa" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="Prua0w5tc3iZd850J66jiQ==" type="text/javascript">
+    window["pageRequestStartTime"] = 1759739977465;
+    window["pageRequestEndTime"] = 1759739977536;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <script nonce="Prua0w5tc3iZd850J66jiQ==" id="gsi-client" src="https://accounts.google.com/gsi/client" async defer></script>
+  <script nonce="Prua0w5tc3iZd850J66jiQ==">window.KAGGLE_JUPYTERLAB_PATH = "/static/assets/jupyterlab-v4/jupyterlab-index-f210c7f8c7b490e1ca5b.html";</script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+    <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" id="dynamic-favicon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="Prua0w5tc3iZd850J66jiQ==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+
+    <link rel="canonical" href="https://www.kaggle.com/datasets/harutyunagababyan/crime-stats-of-south-africa-2011-2023" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=2d4e7ec4eb689d926191" />
+
+  
+    
+ 
+      <script nonce="Prua0w5tc3iZd850J66jiQ==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="Prua0w5tc3iZd850J66jiQ==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets',
+            'user_properties': {
+                'logged_in': false,
+            }
+        });
+    </script>
+    <script nonce="Prua0w5tc3iZd850J66jiQ==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+  
+    
+    <meta property="og:url" content="https://www.kaggle.com/datasets/harutyunagababyan/crime-stats-of-south-africa-2011-2023" />
+    <meta property="og:title" content="Crime Stats of South Africa 2011-2023" />
+    <meta property="og:description" content="Crime statistics as released by the South African Police Services." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/4264510/7344258/f9bb98fccc6399786998677fe3da0c44/dataset-card.png?t=2024-01-05-15-01-28" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+            <script nonce="Prua0w5tc3iZd850J66jiQ==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"Crime Stats of South Africa 2011-2023","description":"# South African Crime Statistics Dataset\n\nThis dataset encompasses crime statistics for South Africa, spanning from the financial year 2011/2012 to 2022/2023. The data has been released by the South African Police Services (SAPS) and includes various categories of crime incidents.\n\n## SAPS Objective\n\nThe South African Police Service has accepted a new and challenging objective to align its crime statistics with international best practices. This commitment is aimed at enhancing the credibility and accuracy of the crime data.\n\n## Importance of SAPS Crime Statistics\n\nThe crime statistics generated by SAPS play a crucial role in the statistics system's value chain. They inform policy development and planning within the criminal justice system. The collaboration with StatsSA (Statistics South Africa) is seen as a significant step towards improving the integrity of SAPS crime statistics, ensuring that policy-makers have access to high-quality data for informed decision-making.\n\n## Dataset structure\n```\n.\n├── categoris/  \n│   ├── aggravated_robbery_incidents_by_category.csv  \n│   ├── contact_crime_incidents_by_category.csv  \n│   ├── contact_related_crime_incidents_by_category.csv  \n│   ├── crimes_detected_as_a_result_of_police_action.csv  \n│   ├── other_serious_crime_incidents_by_category.csv  \n│   ├── property_related_crime_incidents_by_category.csv \n│   └── sexual_offence_incidents_by_category.csv \n└── crime_incidents_by_category.csv\n\n```\n## Geographical Distribution\n\nThe dataset covers various provinces in South Africa, with each province represented by its respective code:\n\n- ZA: South Africa\n- EC: Eastern Cape\n- FS: Free State\n- GT: Gauteng\n- KZN: KwaZulu-Natal\n- LIM: Limpopo\n- MP: Mpumalanga\n- NW: North West (Bokone Bophirima)\n- NC: Northern Cape (Kapa Bokone) \n- WC: Western Cape (Kapa Bodikela)","url":"https://www.kaggle.com/harutyunagababyan/crime-stats-of-south-africa-2011-2023","version":6,"keywords":["subject, people and society, law, government, crime","analysis, statistical analysis","geography and places, africa"],"license":{"@type":"CreativeWork","name":"CC BY-SA 4.0","url":"https://creativecommons.org/licenses/by-sa/4.0/"},"identifier":["4264510"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"Harutyun Aghababyan","url":"https://www.kaggle.com/harutyunagababyan","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/15481032-kg.jpg"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/harutyunagababyan/crime-stats-of-south-africa-2011-2023/download?datasetVersionNumber=6","contentSize":"31552 bytes"}],"commentCount":0,"dateModified":"2024-01-09T04:25:52.86Z","discussionUrl":"https://www.kaggle.com/harutyunagababyan/crime-stats-of-south-africa-2011-2023/discussion","alternateName":"Crime statistics as released by the South African Police Services.","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/4264510/7344258/f9bb98fccc6399786998677fe3da0c44/dataset-card.png?t=2024-01-05-15-01-28","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":0},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":347},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":1179},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":4}]}</script>
+        
+
+  
+    
+
+  
+    
+
+
+    <script nonce="Prua0w5tc3iZd850J66jiQ==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="Prua0w5tc3iZd850J66jiQ==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="Prua0w5tc3iZd850J66jiQ==" src="/static/assets/runtime.js?v=2911693af5839685a5fd"></script>
+  <script nonce="Prua0w5tc3iZd850J66jiQ==" src="/static/assets/vendor.js?v=5f5ace68d8e037896b4c"></script>
+  <script nonce="Prua0w5tc3iZd850J66jiQ==" src="/static/assets/app.js?v=3be01c27e37421e8d1d2"></script>
+    <script nonce="Prua0w5tc3iZd850J66jiQ==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+<body>
+  <div id="root">
+    
+
+
+
+
+
+
+
+
+<script nonce="Prua0w5tc3iZd850J66jiQ==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    jax: ['input/TeX', 'output/SVG'],
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="Prua0w5tc3iZd850J66jiQ==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    // Always use the production asset in local dev, which is served from GCS. We tried to proxy and / or serve this
+    // in a better way in localhost, but it didn't work out. See b/328073416#comment8 for details.
+    const forceProdHost = window.location.hostname === "localhost";
+    lib.src = `${forceProdHost ? "https://www.kaggle.com" : ""}/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS_SVG`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>
